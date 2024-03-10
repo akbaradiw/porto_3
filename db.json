@@ -1,0 +1,29 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "food": "bakso",
+            "drink": "kopi"
+        },
+        {
+            "id": 2,
+            "food": "soto",
+            "drink": "teh"
+        },
+        {
+            "id": 3,
+            "food": "spageti",
+            "drink": "jus"
+        },
+        {
+            "id": 1,
+            "food": "ramen",
+            "drink": "asahi beer"
+        },
+        {
+            "id": 1,
+            "food": "al buruj",
+            "drink": "kurma water"
+        }
+    ]
+}
