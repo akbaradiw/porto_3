@@ -1,24 +1,26 @@
-import React from "react"
-import { useSelector } from 'react-redux'
-import { selectAllPost } from '../../redux/features/post/postSlice'
-
+import React from "react";
+import { useSelector } from "react-redux";
 
 const PostFeature = () => {
- const post = useSelector(selectAllPost)
-const renderedPost = post.map(post => {
-    <div key={post.id}>
-        <h1>{post.title}</h1>
-        <p>{post.body}</p>
+const { list } = useSelector((state) => state.post);
+const thisPost = list.map((item) => {
+  return (
+    <article key={item.id}>
+      <h2>{item.title}</h2>
+      <p>{item.body}</p>
+    </article>
+  );
+});
+
+  
+
+
+  return (
+    <div>
+      <h1>post feature</h1>
+      {thisPost}
     </div>
-})
- 
+  );
+};
 
-    return (
-        <div>
-            <h1>post feature</h1>
-            {renderedPost}
-        </div>
-    )
-}
-
-export default PostFeature
+export default PostFeature;
