@@ -2,6 +2,7 @@ import React from "react"
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from "../../redux/features/counter/counterSlice"
 import PostFeature from "../../component/PostFeature"
+import ShowMenu from "../../component/ShowMenu"
 const HomePage = () => {
  const counter = useSelector(state => state.counter.value)  
 const dispatch = useDispatch()
@@ -26,6 +27,8 @@ const handleMinus = () => {
             <button onClick={handleAdd}>tambah</button>
             <button onClick={handleMinus}>kurang</button>
             <PostFeature />
+            <ShowMenu/>
+
         </div>
     )
 }
